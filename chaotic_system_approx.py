@@ -368,44 +368,4 @@ if __name__ == "__main__":
 
         return ts, ys, node_model
 
-        # # Plotting y1 and y2 against time
-        # plt.figure(figsize=(12, 6))
-        #
-        # # Subplot for time series
-        # plt.subplot(1, 2, 1)
-        # plt.plot(ts, ys[0, :, 0], c="dodgerblue", label=r"Real $x_1$")
-        # plt.plot(ts, ys[0, :, 1], c="g", label=r"Real $x_1$")
-        # model_y = node_model(ts, ys[0, 0])
-        # plt.plot(ts, model_y[:, 0], c="crimson", label="Model y1")
-        # plt.plot(ts, model_y[:, 1], c="y", label="Model y2")
-        # plt.xlabel("Time")
-        # plt.ylabel("States")
-        # plt.legend()
-        # plt.title("Time Series")
-        #
-        # # Subplot for phase space trajectory
-        # plt.subplot(1, 2, 2)
-        # plt.plot(ys[0, :, 0], ys[0, :, 1], c="dodgerblue", label="Real Trajectory")
-        # plt.plot(
-        #     model_y[:, 0], model_y[:, 1], c="crimson", label="Model Trajectory"
-        # )
-        # plt.xlabel("$y_1(t)$")
-        # plt.ylabel("$y_2(t)$")
-        # plt.title("Phase Space Trajectory")
-        # plt.legend()
-        #
-        # plt.tight_layout()
-        # # plt.savefig("neural_ode_combined.png")
-        # plt.show()
-
-        #     plt.plot(ts, ys[0, :, 0], c="dodgerblue", label="Real")
-        #     plt.plot(ts, ys[0, :, 1], c="g", label="Real 2")
-        #     model_y = node_model(ts, ys[0, 0])
-        #     plt.plot(ts, model_y[:, 0], c="crimson", label="Model")
-        #     plt.plot(ts, model_y[:, 1], c="y", label="Model 2")
-        #     plt.legend()
-        #     plt.tight_layout()
-        #     # plt.savefig("neural_ode.png")
-        #     plt.show()
-
     ts, ys, model = main()
