@@ -1,5 +1,5 @@
-diffrax==0.4.1
-equinox==0.11.2
-jax==0.4.12
-matplotlib==3.7.1
-optax==0.1.7
+diffrax
+equinox
+jax
+matplotlib
+optax
